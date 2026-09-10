@@ -72,7 +72,7 @@ export const brandStory = {
   paragraphs: [
     "Tóth József több angolszász országban is megvetette a lábát, főként Angliában dolgozott a vendéglátásban. Londonban figyelte meg, hogy a helyi taxisok mindig ugyanahhoz a sarki burgereshez járnak enni — a taxisok pedig tudják, hol van a jó kaja.",
     "Innen jött az ötlet: ha egyszer hazahozza az angolszász hambikultúrát, a hely neve Black Cab lesz. Az elképzelésből vízió lett, majd valóság — 2011 óta állunk a Mester utcában, jóval a smash burger hullám előttről.",
-    "Nem akarunk kiszúrni a szemünket semmivel. Itt a konzisztencia, a minőség és az egyszerűség a lényeg, de az nagyon.",
+    "Itt a konzisztencia, a minőség és az egyszerűség a lényeg, de az nagyon.",
   ],
   quote: {
     text: "Az étterem gyors, ez tény, de emellett minden frissen, az orrunk előtt készül. A húsokat több méretben is kérhetjük, alá és fölé akár mi magunk is kiválaszthatjuk a feltéteket.",
