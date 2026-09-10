@@ -25,7 +25,6 @@ export default function RestaurantJsonLd() {
     url: siteConfig.url,
     servesCuisine: ["Burgers", "American", "Street Food"],
     priceRange: "$$",
-    telephone: contact.phone,
     email: contact.email,
     address: {
       "@type": "PostalAddress",
