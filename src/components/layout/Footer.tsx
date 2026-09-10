@@ -93,11 +93,7 @@ export default function Footer() {
             </a>
           </div>
           <p className="mt-6 text-sm text-ink/70">
-            Rendelj házhoz a népszerű szállítási partnereinken keresztül a{" "}
-            <Link href="/menu" className="underline decoration-cab-red/40 underline-offset-2">
-              menü oldalon
-            </Link>
-            .
+            Rendelj házhoz a népszerű szállítási partnereinken keresztül.
           </p>
         </div>
       </div>
