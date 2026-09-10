@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --color-cab-red: #ad0f0f;
+  --color-cab-red-dark: #7f0b0b;
+  --color-ink: #1a1a1a;
+  --color-cream: #f8f5f0;
+  --color-paper: #ffffff;
+  --color-meter-green: #2f7d4f;
+  --color-steel: #6b6b6b;
+}
+
+@theme inline {
+  --color-cab-red: var(--color-cab-red);
+  --color-cab-red-dark: var(--color-cab-red-dark);
+  --color-ink: var(--color-ink);
+  --color-cream: var(--color-cream);
+  --color-paper: var(--color-paper);
+  --color-meter-green: var(--color-meter-green);
+  --color-steel: var(--color-steel);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+/* Checker-strip motívum — a Flutter-verzió filmkocka-sorát váltja fel egy
+   taxi-rácsmintára hajazó, márkához illő elemmel. Egyszer, tudatosan
+   használjuk, nem díszítésként mindenhol. */
+.checker-strip {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--color-ink) 0,
+    var(--color-ink) 10px,
+    transparent 10px,
+    transparent 26px
+  );
+  height: 10px;
+}
+
+/* Egyetlen, tudatos belépő-animáció a hero fotóhoz — nem használjuk
+   újra minden szekción, csak itt, mert ez az első benyomás pillanata. */
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.hero-photo {
+  animation: hero-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Látható fókusz-gyűrű minden interaktív elemen (billentyűzetes navigáció) */
+:focus-visible {
+  outline: 3px solid var(--color-cab-red);
+  outline-offset: 2px;
+}
