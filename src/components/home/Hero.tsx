@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import OpeningStatusBadge from "@/components/ui/OpeningStatusBadge";
+import { googleRating, timeOutBadge } from "@/lib/site-data";
 
 export default function Hero() {
   return (
@@ -9,12 +10,19 @@ export default function Hero() {
       <div className="checker-strip" aria-hidden />
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center lg:gap-16">
         <div>
-          <div className="mb-6 flex flex-wrap items-center gap-3">
+          <div className="mb-4 flex flex-wrap items-center gap-3">
             <span className="rounded-full bg-cab-red px-4 py-1.5 text-xs font-bold tracking-wide text-white">
-              15+ ÉVE FERENCVÁROSBAN
+              <Link
+                href={timeOutBadge.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {timeOutBadge.label}
+              </Link>
             </span>
             <OpeningStatusBadge />
           </div>
+
 
           <h1 className="font-display text-5xl leading-[0.95] text-ink sm:text-6xl lg:text-7xl">
             NICE TO <span className="text-cab-red">MEAT</span> YOU!

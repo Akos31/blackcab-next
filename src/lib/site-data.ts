@@ -330,3 +330,41 @@ export const galleryPlaceholders = [
   { id: 2, src: "/images/gallery_2.jpg", caption: "Prémium kéksajtos burger baconnel és ketchup-pal" },
   { id: 3, src: "/images/gallery_3.jpg", caption: "Legendás, extra erős kézműves chiliszószok" },
 ];
+
+
+export const googleRating = {
+  value: 4.5,
+  count: 4000,
+  updatedAt: "2026-09",
+  url: "https://www.google.com/maps/place/?q=place_id:ChIJdwnjnv7cQUcR_g_j_kC1uac",
+};
+
+export const timeOutBadge = {
+  label: "Time Out Budapest — Top 3 burger 2026",
+  url: "https://www.timeout.com/budapest/restaurants/best-burger-places-budapest",
+};
+
+export type Review = {
+  name: string;
+  quote: string;
+  source: "google" | "facebook";
+};
+
+export const reviews: Review[] = [
+  {
+    name: "Eszter",
+    quote:
+      "Nagyon kedves volt a kiszolgálás, és ahhoz képest, hogy mennyire volt ízletes és méretes, nem volt drága egyáltalán.",
+    source: "google",
+  },
+  {
+    name: "Andor",
+    quote: "Nagy tapasztalattal mondhatom, hogy az egyik legjobb a városban.",
+    source: "google",
+  },
+  {
+    name: "Kriszta",
+    quote: "A nyitás óta egyik kedvenc hamburgerezőnk :)",
+    source: "facebook",
+  },
+];
