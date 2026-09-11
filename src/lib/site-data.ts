@@ -13,7 +13,7 @@ export const siteConfig = {
   tagline: "Nice to meat you!",
   shortDescription:
     "Londoni minőség és sebesség Ferencváros szívében. Szaftos marhahús, egyedi kiegészítők és barátságos környezet vár rád.",
-  url: "https://blackcabburger.hu",
+  url: "https://www.blackcabburger.hu",
   locale: "hu_HU",
 };
 
